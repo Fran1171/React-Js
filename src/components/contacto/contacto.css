@@ -2,29 +2,29 @@
 *$*$                         SECCION CONTACTO                            *
 *$*$**********************************************************************/
 .containerFormulario {
-  width: 70%;
-  height: auto;
-  background: url("../../images/contacto/imgForm.png") no-repeat center/cover;
-  border-radius: 6px;
+    width: 70%;
+    height: auto;
+    background: url("../../images/contacto/imgForm.png") no-repeat center/cover;
+    border-radius: 6px;
 }
 
 /*Creamos el bucle para usar los valores del mapa*/
 .logo__img--center {
-  width: 35%;
-  height: auto;
+    width: 35%;
+    height: auto;
 }
 
 .imgFounder {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .imgEmpleado {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .boxFormulario {
-  width: 60%;
-  height: auto;
+    width: 60%;
+    height: auto;
 }
