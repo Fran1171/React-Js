@@ -1,8 +1,4 @@
 import React from "react";
-// import Founder from "../../images/nosotros/imgFounder.png";
-// import Emp1 from "../../images/nosotros/emp1.png";
-// import Emp2 from "../../images/nosotros/emp2.png";
-// import Emp3 from "../../images/nosotros/emp3.png";
 
 function Nosotros() {
   return (

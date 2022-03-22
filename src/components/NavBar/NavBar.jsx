@@ -36,7 +36,7 @@ function NavBar() {
           {/* <!-- Menu listado de opciones --> */}
           <div className="collapse navbar-collapse pe-5" id="navbarNav">
             <ul id="menuHeader" className="navbar-nav ms-auto">
-              <Link to="/">
+              <Link to="/" className="text-decoration-none">
                 <li className="nav-item">
                   <a
                     className="nav-link fw-bold text-uppercase menuSecciones wow animate__animated animate__bounceInDown"
@@ -48,7 +48,7 @@ function NavBar() {
                 </li>
               </Link>
 
-              <Link to="/nosotros">
+              <Link to="/nosotros" className="text-decoration-none">
                 <li className="nav-item">
                   <a
                     className="nav-link  fw-bold text-uppercase menuSecciones wow animate__animated animate__bounceInDown"
@@ -60,7 +60,7 @@ function NavBar() {
                 </li>
               </Link>
 
-              <Link to="/productos">
+              <Link to="/productos" className="text-decoration-none">
                 <li className="nav-item">
                   <a
                     className="nav-link  fw-bold text-uppercase menuSecciones wow animate__animated animate__bounceInDown"
@@ -72,7 +72,7 @@ function NavBar() {
                 </li>
               </Link>
 
-              <Link to="/galeria">
+              <Link to="/galeria" className="text-decoration-none">
                 <li className="nav-item">
                   <a
                     className="nav-link  fw-bold text-uppercase menuSecciones wow animate__animated animate__bounceInDown"
@@ -84,7 +84,7 @@ function NavBar() {
                 </li>
               </Link>
 
-              <Link to="/contacto">
+              <Link to="/contacto" className="text-decoration-none">
                 <li className="nav-item">
                   <a
                     className="nav-link  fw-bold text-uppercase menuSecciones wow animate__animated animate__bounceInDown"
