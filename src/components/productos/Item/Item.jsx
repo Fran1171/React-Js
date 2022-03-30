@@ -7,7 +7,6 @@ function Item(props) {
   return (
     <div className="col">
       <div className="card h-100 w-75 card-ancho">
-        {/* <Link to={`/detalle/${props.producto.id}`}> */}
         <Link to={`/item/${props.producto.id}`}>
           <img
             src={props.producto.srcImagen}
