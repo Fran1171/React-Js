@@ -27,7 +27,7 @@ function GaleriaListContainer() {
     <main>
       <section>
         <h1 className="text-center p-4 wow animate__animated animate__fadeInUp">
-          Galería
+          Galeria
         </h1>
 
         <div className="container">

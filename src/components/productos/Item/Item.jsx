@@ -31,7 +31,7 @@ function Item(props) {
 
           {/*Stock*/}
           <div className="h6 text-muted">
-            Stock {props.producto.stock} disponibles
+            {props.producto.stock} disponibles
           </div>
 
           {/* <button id={props.producto.id} 

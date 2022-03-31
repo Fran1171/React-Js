@@ -135,9 +135,14 @@ function NavBar() {
                   </a>
                 </li>
               </Link>
+
+              <Link to="/cart">
+                <li>
+                  <CartWidget />
+                </li>
+              </Link>
             </ul>
           </div>
-          <CartWidget />
         </div>{" "}
         {/*<!-- container -->*/}
       </nav>
