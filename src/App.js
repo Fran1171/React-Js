@@ -12,6 +12,7 @@ import CartContextProvider from "./context/CartContext";
 // import Cart from './components/carritoCompras/cart/Cart';
 import ItemCartContext from "./components/carritoCompras/ItemCartContext/ItemCartContext";
 import TerminarCompra from "./components/carritoCompras/TerminarCompra/TerminarCompra";
+// import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,13 +23,13 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/nosotros" element={<Nosotros />} />
           <Route exact path="/productos/:categoriaId" element={<Productos />} />
-          <Route exact path="/detalle/:id" element={<ItemDetailContainer />} />
           <Route exact path="/item/:id" element={<ItemDetailContainer />} />
           <Route exact path="/galeria" element={<Galeria />} />
           <Route exact path="/contacto" element={<Contacto />} />
           <Route exact path="/cart" element={<ItemCartContext />} />
           <Route exact path="/terminarCompra" element={<TerminarCompra />} />
         </Routes>
+        {/* <Footer /> */}
       </BrowserRouter>
     </CartContextProvider>
   );
