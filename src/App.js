@@ -12,7 +12,6 @@ import CartContextProvider from "./context/CartContext";
 // import Cart from './components/carritoCompras/cart/Cart';
 import ItemCartContext from "./components/carritoCompras/ItemCartContext/ItemCartContext";
 import TerminarCompra from "./components/carritoCompras/TerminarCompra/TerminarCompra";
-// import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -29,7 +28,6 @@ function App() {
           <Route exact path="/cart" element={<ItemCartContext />} />
           <Route exact path="/terminarCompra" element={<TerminarCompra />} />
         </Routes>
-        {/* <Footer /> */}
       </BrowserRouter>
     </CartContextProvider>
   );
