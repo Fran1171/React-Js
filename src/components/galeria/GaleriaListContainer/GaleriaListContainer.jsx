@@ -1,7 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Container, Row } from "react-bootstrap";
 import { getGaleria } from "../../../utils/getGaleria";
 import "../../galeria/galeria.css";
+// import ItemGaleria from '../ItemGaleria/ItemGaleria'
 import ItemListGaleria from "../ItemListGaleria/ItemListGaleria";
 
 function GaleriaListContainer() {
@@ -24,24 +26,28 @@ function GaleriaListContainer() {
   }, []);
 
   return (
-    <main>
-      <section>
-        <h1 className="text-center p-4 wow animate__animated animate__fadeInUp">
-          Galería
-        </h1>
+    <>
+      <div class="separador"></div>
+      <main>
+        <section>
+          <h1 className="text-center pb-4 wow animate__animated animate__fadeInUp">
+            Galería
+          </h1>
 
-        <div className="container">
-          <div className="mainGaleria">
-            {/* Pasa a ItemListGaleria el array con las propiedades de galeria */}
-            {loading ? (
-              <h2>Cargando...</h2>
-            ) : (
-              <ItemListGaleria galeria={galeria} />
-            )}
-          </div>
-        </div>
-      </section>
-    </main>
+          <Container>
+            <Row className="gy-3">
+              {loading ? (
+                <h2>Cargando...</h2>
+              ) : (
+                <ItemListGaleria galeria={galeria} />
+              )}
+            </Row>
+          </Container>
+        </section>
+      </main>
+
+      <div className="separador"></div>
+    </>
   );
 }
 

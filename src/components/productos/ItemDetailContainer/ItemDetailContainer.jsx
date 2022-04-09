@@ -1,7 +1,13 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react'
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getProductos } from '../../../utils/getProductos'
+import { getProductById } from '../../../Firebase/firebase';
+// import productoService from '../../../data/productoService';
+// import { db } from '../../../Firebase/firebase';
+
+// import getProductFiltered from '../../../Firebase/firebase';
+// import { getProductos } from '../../../utils/getProductos'
 import ItemDetail from '../ItemDetail/ItemDetail';
 
 function ItemDetailContainer() {
@@ -11,31 +17,40 @@ function ItemDetailContainer() {
 
     const { id } = useParams(); //toma el parametro de la url y lo guarda en una variable id.
 
-    useEffect(() => {
+    useEffect(async () => {
 
-        //api Fetch()
-        getProductos    
-        .then(data => {   
-            const item = data.find(producto => producto.id === id)
+        try {
+
+            const item = await getProductById('productos',id)
+            // const item = await productoService.getProductById('productos',id,db)
             setItemSeleccionado(item)
-        })
-        .catch(err => console.log(err))    
-        .finally(()=> setLoading(false))
         
-        // return () => {
-        //     console.log('clean')
-        // }
+        }
+        catch (error) {
+            console.log(error)    
+        }
+        finally{
+            setLoading(false)
+        }
+
     },[id])
 
     return (
-        <div className="container-sm container-md container-lg">
 
-            {
-                loading ? <h2>Cargando...</h2> 
-                        : <ItemDetail item={itemSeleccionado}/>
-            }
+        <>
+            <div class="separador"></div>
+        
+            <div className="container container-sm container-md container-lg">
 
-        </div>
+                {
+                    loading ? <h2>Cargando...</h2> 
+                            : <ItemDetail item={itemSeleccionado}/>
+                }
+
+            </div>
+
+            <div class="separador"></div>
+        </>
     )
 }
 

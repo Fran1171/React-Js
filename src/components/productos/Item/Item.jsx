@@ -9,9 +9,8 @@ function Item(props) {
       <div className="card h-100 w-75 card-ancho">
         <Link to={`/item/${props.producto.id}`}>
           <img
-            src={props.producto.srcImagen}
+            src={props.producto.imagen}
             className="card-img-top img-fluid"
-            loading="lazy"
             alt={props.producto.descripcion}
           />
         </Link>
@@ -24,7 +23,7 @@ function Item(props) {
 
           {/*Precio*/}
           <div className="h6 text-muted">
-            {"$" + parseFloat(props.producto.precio).toFixed(2)}
+            {"$ " + parseFloat(props.producto.precio).toFixed(2)}
           </div>
 
           {/*Stock*/}

@@ -12,6 +12,8 @@ import CartContextProvider from "./context/CartContext";
 // import Cart from './components/carritoCompras/cart/Cart';
 import ItemCartContext from "./components/carritoCompras/ItemCartContext/ItemCartContext";
 import TerminarCompra from "./components/carritoCompras/TerminarCompra/TerminarCompra";
+import Footer from "./components/Footer/Footer";
+import Display404 from "./components/404/Display404";
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
           <Route exact path="/contacto" element={<Contacto />} />
           <Route exact path="/cart" element={<ItemCartContext />} />
           <Route exact path="/terminarCompra" element={<TerminarCompra />} />
+          <Route exact path="/display404" element={<Display404 />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </CartContextProvider>
   );
