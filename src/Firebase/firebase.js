@@ -1,54 +1,18 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs, query, where,doc,getDoc } from 'firebase/firestore';
-
-// Follow this pattern to import other Firebase services
-// import { } from 'firebase/<service>';
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-
-    apiKey: "AIzaSyCKqiDPbMwMsNSLL4YvwIvLK1wIvo6VM2s",
-    authDomain: "makeup-ecommerce.firebaseapp.com",
-    projectId: "makeup-ecommerce",
-    storageBucket: "makeup-ecommerce.appspot.com",
-    messagingSenderId: "1029959937004",
-    appId: "1:1029959937004:web:c4578d7699f6b4368caec9",
-    measurementId: "G-6TRBR0DQ3X"
-
+  apiKey: "AIzaSyB0oid5wWiO0OAs46uV2NeFjXAR28J23Fs",
+  authDomain: "coderhouse-ecommerce-489ce.firebaseapp.com",
+  projectId: "coderhouse-ecommerce-489ce",
+  storageBucket: "coderhouse-ecommerce-489ce.appspot.com",
+  messagingSenderId: "43805418401",
+  appId: "1:43805418401:web:2db191c63bf39bbf69a1e0",
+  measurementId: "G-KN6MDWRPEZ",
 };
 
 const app = initializeApp(firebaseConfig);
 
 // Obtiene la conexion a bd
 export const db = getFirestore(app);
-
-async function getProductFiltered(tabla,field, operator,condition) {
-
-    // Obtiene la coleccion a tratar
-    // const productosCol = collection(db, 'productos');
-
-    // Obtiene los documentos de la coleccion sin filtro(todo)
-    // const productoSnapshot = await getDocs( productosCol );
-
-    // Create a query against the collection.
-    const buildQuery = query(collection(db, `${tabla}`), where(`${field}`, `${operator}`, `${condition}`));
-
-    // Obtiene los documentos filtrados
-    const productoSnapshot = await getDocs( buildQuery );
-    
-    // Obtiene los documentos en un array
-    const productoList = productoSnapshot.docs.map(doc => ({ id:doc.id, ...doc.data() }));
-
-    return productoList;
-
-}
-
-export async function getProductById(tabla,id) {
-    
-    const productoSnap = await getDoc( doc( db, `${tabla}`, `${id}`) )
-
-    return { id:productoSnap.id, ...productoSnap.data() }
-
-}
-
-export default getProductFiltered

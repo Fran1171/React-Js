@@ -1,7 +1,7 @@
 /**$*$********************************************************************
 *$*$                         MENU                                        *
 *$*$**********************************************************************/
-header {
+.bg-navbar {
   background-color: #11c59c;
 }
 
@@ -46,6 +46,10 @@ header {
   background-color: #70f7e0 !important;
 }
 
+.navbar .dropdown-menu {
+  background-color: #11c59c;
+}
+
 /**$*$********************************************************************
 *$*$                         CUSTOM ICON HAMBURGUESA                     *
 *$*$**********************************************************************/
@@ -65,8 +69,8 @@ header {
   color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 50px;
-  right: 140px;
+  top: 70px;
+  right: 108px;
   font-size: 13px;
   width: 25px;
   height: 25px;
@@ -79,8 +83,8 @@ header {
 /*TABLET LANDSCAPE UP DISPOSITIVOS MEDIOS*/
 @media screen and (max-width: 768px) {
   .contador {
-    top: 5px;
-    right: 15px;
+    top: 380px;
+    left: 60px;
     font-size: 15px;
     width: 20px;
     height: 20px;
@@ -90,7 +94,15 @@ header {
 /*TELEFONOS LANDSCAPE + TABLET VERTICAL DISPOSITIVOS SMALLS*/
 @media screen and (max-width: 599px) {
   .contador {
-    top: 50px;
-    right: 140px;
+    top: 355px;
+    left: 60px;
+  }
+
+  #IdCart {
+    padding-left: 30px;
+  }
+
+  #basic-nav-dropdown {
+    padding-left: 30px;
   }
 }

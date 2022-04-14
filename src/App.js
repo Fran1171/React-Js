@@ -9,11 +9,11 @@ import Galeria from "./components/galeria/GaleriaListContainer/GaleriaListContai
 import Contacto from "./components/contacto/Contacto";
 import ItemDetailContainer from "./components/productos/ItemDetailContainer/ItemDetailContainer";
 import CartContextProvider from "./context/CartContext";
-// import Cart from './components/carritoCompras/cart/Cart';
 import ItemCartContext from "./components/carritoCompras/ItemCartContext/ItemCartContext";
 import TerminarCompra from "./components/carritoCompras/TerminarCompra/TerminarCompra";
 import Footer from "./components/Footer/Footer";
 import Display404 from "./components/404/Display404";
+import FormularioCompra from "./components/carritoCompras/FormularioCompra/FormularioCompra.jsx";
 
 function App() {
   return (
@@ -29,6 +29,11 @@ function App() {
           <Route exact path="/contacto" element={<Contacto />} />
           <Route exact path="/cart" element={<ItemCartContext />} />
           <Route exact path="/terminarCompra" element={<TerminarCompra />} />
+          <Route
+            exact
+            path="/formularioCompra"
+            element={<FormularioCompra />}
+          />
           <Route exact path="/display404" element={<Display404 />} />
         </Routes>
         <Footer />

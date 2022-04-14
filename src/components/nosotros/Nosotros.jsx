@@ -12,8 +12,8 @@ function Nosotros() {
         <div className="container wow animate__animated animate__fadeInUp">
           <article className="text-center p-4">
             <p>
-              Gringa Sotre es una empresa dedicada a la venta online de ropa y
-              accesorios de mackup. Nuestro objetivo es ofrecer la moda más
+              Gringa Sotre es una empresa dedicada a la venta online de ropa,
+              accesorios y mackup. Nuestro objetivo es ofrecer la moda más
               actual a los mejores precios. Tenemos a su disposición una gran
               variedad de productos, los cuales son renovados cada temporada
               para dar siempre las prendas más trendy. Tenemos un equipo que
@@ -26,28 +26,6 @@ function Nosotros() {
           </article>
         </div>
         {/* <!-- container --> */}
-      </section>
-
-      <section>
-        <h2 className="text-center pt-3 wow animate__animated animate__fadeInUp">
-          ¿Donde nos encontramos?
-        </h2>
-
-        <div className="separador"></div>
-
-        {/* <!--Google map--> */}
-        <div className="container mx-auto wow animate__animated animate__fadeInUp">
-          <div className="map-responsive">
-            {/* <iframe
-              src="https://maps.google.com/maps?q=ingleses%20brasil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              width="600"
-              height="450"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen
-            ></iframe> */}
-          </div>
-        </div>
       </section>
     </main>
   );

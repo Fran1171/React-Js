@@ -1,17 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
 import { getGaleria } from "../../../utils/getGaleria";
-import "../../galeria/galeria.css";
-// import ItemGaleria from '../ItemGaleria/ItemGaleria'
 import ItemListGaleria from "../ItemListGaleria/ItemListGaleria";
+import { Container, Row } from "react-bootstrap";
+import "../../galeria/galeria.css";
 
 function GaleriaListContainer() {
   const [galeria, setGaleria] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    //api Fetch()
     getGaleria
       .then((data) => {
         setGaleria(data);
@@ -19,10 +17,6 @@ function GaleriaListContainer() {
       })
       .catch((err) => console.log(err))
       .finally(() => setLoading(false));
-
-    // return () => {
-    //     console.log('clean')
-    // }
   }, []);
 
   return (

@@ -6,9 +6,9 @@ function Home() {
   return (
     <>
       {/* <!-- Estrellas parallax --> */}
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
+      {/* <div id="stars"></div> */}
+      {/* <div id="stars2"></div> */}
+      {/* <div id="stars3"></div> */}
       {/* <div className="display-3 fw-bold title wow animate__animated animate__backInDown" 
                  data-wow-delay="0.5s"
                  data-wow-iteration="1">
@@ -17,7 +17,7 @@ function Home() {
 
       <main>
         <div className="contenidoPrincipal">
-          {/* <!-- Parrafo Maquillaje --> */}
+          {/* <!-- Parrafo 1 --> */}
           <section className="m-3 p-4">
             <h1 className="text-uppercase text-center pb-3 wow animate__animated animate__fadeInUp">
               VESTIMENTA
@@ -140,48 +140,6 @@ function Home() {
               </p>
             </div>
           </section>
-
-          {/* <!-- Texto sobre imagen 3 -->
-                    <section className="altoParallax">
-                        <div className="cont container--full">
-                            <div className="content display-3 fw-bold shimmer">
-                                Makeup <br/>Artístico
-                            </div>
-                        </div>
-                        <div className="parallax img-fluid indexFoto3"></div>
-                    </section> */}
-
-          {/* <!-- Parrafo Productos de alta calidad --> */}
-          {/* <section className="m-3 p-4">
-            <h2 className="text-uppercase text-center pb-3 wow animate__animated animate__fadeInUp">
-              Productos de alta calidad
-            </h2>
-            <p
-              className="text-start wow animate__animated animate__fadeInUp "
-              data-wow-delay="0.1s"
-            >
-              Contamos con líneaa de productos profesionales del mercado
-              nacional e internacional. Tenemos a disposición más de 400
-              productos, los mejores desarrollos en productos HD y Ultra HD, y
-              una novedosa línea 100% certificada cruelty free + sin parabenos
-              que respeta el cuidado de la piel. Marcas de maquillaje
-              profesional a la vanguardia de las últimas tendencias de belleza,
-              nuestra misión es ofrecer productos auténticos, con materiales
-              genuinos de alto rendimiento que cumplan ampliamente el
-              requerimiento de la tecnología 4KCOMPLEX y, los sueños artísticos
-              más exigentes.
-            </p>
-          </section> */}
-
-          {/* <!-- Texto sobre imagen 4 --> */}
-          {/* <section className="altoParallax">
-                        <div className="cont container--full">
-                            <div className="content display-3 fw-bold shimmer">
-                                El mejor producto <br/>del Mercado
-                            </div>
-                        </div>
-                        <div className="parallax img-fluid indexFoto4"></div>
-                    </section> */}
         </div>
         {/* <!-- contenidoPrincipal --> */}
       </main>

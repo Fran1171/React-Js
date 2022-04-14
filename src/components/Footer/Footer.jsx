@@ -105,7 +105,7 @@ function Footer() {
             </p>
             <div className="mb-2 mb-lg-3 ">
               <a
-                href="https://www.facebook.com/Elidiazmkp-102206465077886/about/?ref=page_internal"
+                href="https://www.facebook.com"
                 className="me-1  text-decoration-none textoFooter"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -131,7 +131,7 @@ function Footer() {
 
             <div className="mb-2 mb-lg-3 ">
               <a
-                href="https://www.instagram.com/elidiazmkp/"
+                href="https://www.instagram.com"
                 className="me-1  text-decoration-none textoFooter"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -158,7 +158,7 @@ function Footer() {
 
           {/* <!-- Copyright --> */}
           <div className="col-12 text-center m-3 text-muted">
-            © 2021 Copyright
+            © 2022 Copyright
           </div>
         </div>
         {/* <!-- row --> */}
