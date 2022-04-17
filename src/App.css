@@ -39,11 +39,11 @@ p {
   margin: 1%;
 }
 
-.cartCountwidth{
+.cartCountwidth {
   width: 50%;
 }
 
-.nombreProductoCart{
+.nombreProductoCart {
   font-size: 1.2rem;
 }
 
@@ -51,12 +51,12 @@ p {
   padding-left: 60px;
 }
 
-.cartBoxContact{
+.cartBoxContact {
   width: 40%;
   margin-left: 30%;
 }
 
-#basic-nav-dropdown{
+#basic-nav-dropdown {
   font-weight: bold;
   color: white;
   text-transform: uppercase;
@@ -67,16 +67,6 @@ p {
 /**$*$********************************************************************
 *$*$                         MEDIA QUERYS                                *
 *$*$**********************************************************************/
-/*DISPOSITIVOS XL LARGOS*/
-/* @media screen and (max-width: 1200px) {} */
-/*NOTEBOOK + LAP + ESCRITORIO DISPOSITIVOS LARGOS*/
-/* @media screen and (max-width: 992px) {
-  .containerFormulario {
-    width: 95%;
-    height: auto;
-  }
-} */
-
 /*TABLET LANDSCAPE UP DISPOSITIVOS MEDIOS*/
 @media screen and (max-width: 768px) {
   .mainGaleria {
@@ -101,12 +91,10 @@ p {
     width: 50%;
     margin-left: 30%;
   }
-
 }
 
 /*TELEFONOS - DISPOSITIVOS XS*/
 @media screen and (max-width: 600px) {
-
   #imgFounder {
     margin-left: 20px;
   }
@@ -129,7 +117,6 @@ p {
     width: 100%;
     margin-bottom: 4%;
   }
-
 }
 
 /*TELEFONOS LANDSCAPE + TABLET VERTICAL DISPOSITIVOS SMALLS*/
@@ -218,7 +205,7 @@ p {
     font-size: 1rem;
   }
 
-  .stockPadding{
+  .stockPadding {
     padding-left: 20px;
   }
 
@@ -230,7 +217,6 @@ p {
   .cartBoxContact--button {
     width: 100%;
   }
-
 }
 
 /*TELEFONOS LANDSCAPE + TABLET VERTICAL DISPOSITIVOS SMALLS*/

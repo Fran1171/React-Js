@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 
 function ItemListCart(props) {
     
-    console.log("ItemListCart")
-
     const {vaciarCarrito,calcularTotal} = useCartContext()    
     let total = 0
 

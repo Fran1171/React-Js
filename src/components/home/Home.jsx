@@ -1,20 +1,9 @@
 import React from "react";
 import "./home.css";
-// import background from '../../images/index/img1.png'
 
 function Home() {
   return (
     <>
-      {/* <!-- Estrellas parallax --> */}
-      {/* <div id="stars"></div> */}
-      {/* <div id="stars2"></div> */}
-      {/* <div id="stars3"></div> */}
-      {/* <div className="display-3 fw-bold title wow animate__animated animate__backInDown" 
-                 data-wow-delay="0.5s"
-                 data-wow-iteration="1">
-                Makeup <br/> En su máxima expresión
-            </div> */}
-
       <main>
         <div className="contenidoPrincipal">
           {/* <!-- Parrafo 1 --> */}
@@ -39,25 +28,8 @@ function Home() {
                 tendencias que se usan, hecho que reporta reconocimiento y
                 valoración positiva en algunos contextos
               </p>
-              <p>
-                Los estilos impecables son posibles gracias al mejor maquillaje
-                de rostro que ofrecemos. Tonos de rubores perfectos, bases
-                sutiles, correctores, prebases y maquillaje para contornear el
-                rostro para ayudarte a crear el look perfecto, no importa qué
-                lado de ti quieras destacar.
-              </p>
             </div>
           </section>
-
-          {/* <!-- Texto sobre imagen 1 --> */}
-          {/* <section className="altoParallax">
-                        <div className="cont container--full">
-                            <div className="content display-3 fw-bold shimmer">
-                                Makeup <br/> Style Design
-                            </div>
-                        </div>
-                        <div className="parallax img-fluid" style={{ backgroundImage: `url(${background})` }}></div>
-                    </section> */}
 
           {/* <!-- Parrafo Pestañas --> */}
           <section className="m-3 p-4">
@@ -86,27 +58,8 @@ function Home() {
                 accesorios más utilizados, estas piezas son muy versátiles y
                 elegantes.
               </p>
-              <p>
-                Con la gran variedad de extensiones que hay para elegir —de
-                diferente longitud, grosor, material y tipo de ondulación,
-                podemos transformar tus ojos. “Por ejemplo, en las mujeres de 50
-                años o más, las pestañas naturales comienzan a perder volumen y
-                los párpados exteriores pueden comenzar a descender levemente”.
-                “Mediante el uso de pestañas de diversas longitudes, podemos
-                crear volumen donde no existe y realmente levantar los ojos”.
-              </p>
             </div>
           </section>
-
-          {/* <!-- Texto sobre imagen 2 --> */}
-          {/* <section className="altoParallax">
-                        <div className="cont container--full">
-                            <div className="content display-3 fw-bold shimmer">
-                                Lifting <br/> Pestañas Magneticas
-                            </div>
-                        </div>
-                        <div className="parallax img-fluid indexFoto2"></div>
-                    </section> */}
 
           {/* <!-- Parrafo Maquillaje Artístico --> */}
           <section className="m-3 p-4">
@@ -138,9 +91,11 @@ function Home() {
                 no se es a diferencia muy notoria del maquillaje natural y
                 convencional.
               </p>
+              <p></p>
             </div>
           </section>
         </div>
+        {/* <div className="separador"> </div> */}
         {/* <!-- contenidoPrincipal --> */}
       </main>
     </>

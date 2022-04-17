@@ -47,14 +47,6 @@ function NavBar() {
               <NavDropdown title="Productos" id="basic-nav-dropdown">
                 <NavDropdown.Item className="hoverOpciones">
                   <Link
-                    to="/productos/accesorios"
-                    className="text-decoration-none text-white"
-                  >
-                    Accesorios
-                  </Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item className="hoverOpciones">
-                  <Link
                     to="/productos/indumentaria"
                     className="text-decoration-none text-white"
                   >
@@ -64,10 +56,19 @@ function NavBar() {
 
                 <NavDropdown.Item className="hoverOpciones">
                   <Link
-                    to="/productos/maquillaje"
+                    to="/productos/accesorios"
                     className="text-decoration-none text-white"
                   >
-                    Maquillaje
+                    Accesorios
+                  </Link>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item className="hoverOpciones">
+                  <Link
+                    to="/productos/cosmeticos"
+                    className="text-decoration-none text-white"
+                  >
+                    Cosmeticos
                   </Link>
                 </NavDropdown.Item>
               </NavDropdown>
