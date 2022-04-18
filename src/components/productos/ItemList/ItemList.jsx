@@ -7,7 +7,7 @@ function ItemList(props) {
       <div class="separador"></div>
       <main>
         <section>
-          <h1 className="text-center p-4">ProductosInicio01</h1>
+          <h1 className="text-center p-4">Productos</h1>
 
           <div className="container-sm container-md container-lg">
             <div className="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-2 g-lg-3 g-md-3 g-sm-2 ms-md-5">
